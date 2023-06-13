@@ -42,7 +42,7 @@ public class EvilistController {
 	
 	@PostMapping("/formsubmit")
 	public String formsubmit(Model model) {
-		
+		model.addAttribute("textPass",EvilistUtil.createTextPassword());
 		return "result";
 	}
 	
